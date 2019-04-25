@@ -47,3 +47,13 @@ body {
   padding-top: 60px;
   transition: 0.5s;
 }
+.open-slide {
+  position: relative;
+  left: 30px;
+  top: 10px;
+}
+
+.brand-logo {
+  position: relative;
+  left: 90px;
+}
