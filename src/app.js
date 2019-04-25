@@ -1,3 +1,56 @@
+// <Purple_Kush />
+// <Bazuka_buble_gum />
+// <Good_Time />
+// <The_Hangover />
+// <Fun_Dip />
+// <Sour_Patch_Kids />
+// <Jedi_Skywalker />
+
+// class Cart extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.addOne = this.addOne.bind(this);
+//     this.minusOne = this.minusOne.bind(this);
+
+//     this.state = {
+//       count: 0
+//     };
+//   }
+//   addOne() {
+//     this.setState(prevCount => {
+//       return {
+//         count: prevCount.count + 1
+//       };
+//     });
+//   }
+//   minusOne() {
+//     this.setState(prevState => {
+//       if (prevState.count < 1) {
+//         return {
+//           count: (prevState.count = 0)
+//         };
+//       } else {
+//         return {
+//           count: prevState.count - 1
+//         };
+//       }
+//     });
+//   }
+
+//   render() {
+//     const test = "Is anything printing?";
+
+//     return (
+//       <div>
+//         <Godzilla
+//           addOne={this.addOne}
+//           count={this.state.count}
+//           minusOne={this.minusOne}
+//         />
+//       </div>
+//     );
+//   }
+// }
 class KushApp extends React.Component {
   constructor(props) {
     super(props);
@@ -65,6 +118,8 @@ class KushApp extends React.Component {
   render() {
     return (
       <div>
+        <br />
+        <br />
         <br />
         <br />
 
@@ -146,8 +201,7 @@ class Purple_Kush extends React.Component {
       prize: 10.99,
       title: "Purple K...",
       amount: 0,
-      subtitle: "Purple Kush",
-      image: "/images/purple-kush.jpg"
+      subtitle: "Purple Kush"
     };
     this.purple = this.purple.bind(this);
     this.subt = this.subt.bind(this);
@@ -166,7 +220,6 @@ class Purple_Kush extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -181,8 +234,7 @@ class Bazuka_buble_gum extends React.Component {
       title: "Bazuka...",
       prize: 15.0,
       amount: 0,
-      subtitle: "Bazuka Buble Gum",
-      image: "/images/kandy-kush-leagle-2_kr_natural-small.jpg"
+      subtitle: "Bazuka Buble Gum"
     };
     this.subt = this.subt.bind(this);
     this.bazuka = this.bazuka.bind(this);
@@ -201,7 +253,6 @@ class Bazuka_buble_gum extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -216,8 +267,7 @@ class Godzilla extends React.Component {
       title: "Godzilla",
       prize: 10.5,
       subtitle: "Godzilla",
-      amount: 0,
-      image: "/images/s-marijuana.1.jpg"
+      amount: 0
     };
     this.subt = this.subt.bind(this);
     this.godzilla = this.godzilla.bind(this);
@@ -237,7 +287,6 @@ class Godzilla extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -252,8 +301,7 @@ class Jedi_Skywalker extends React.Component {
       title: "Jedi...",
       prize: 10.99,
       subtitle: "Jedi Skywalker",
-      amount: 0,
-      image: "/images/1z2zr4o.jpg"
+      amount: 0
     };
     this.jedi = this.jedi.bind(this);
     this.subt = this.subt.bind(this);
@@ -271,7 +319,6 @@ class Jedi_Skywalker extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -286,8 +333,7 @@ class Fun_Dip extends React.Component {
       title: "Fun Dip",
       prize: 13.5,
       subtitle: "Fun Dip",
-      amount: 0,
-      image: "/images/og-kush-.jpg"
+      amount: 0
     };
     this.subt = this.subt.bind(this);
     this.dip = this.dip.bind(this);
@@ -305,7 +351,6 @@ class Fun_Dip extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -319,8 +364,7 @@ class Sour_Patch_Kids extends React.Component {
       prize: 10.0,
       title: "Sour Patch...",
       subtitle: "Sour Patch Kids",
-      amount: 0,
-      image: "/images/ba7ea1fda379e94c6fae61cec211755a.jpg"
+      amount: 0
     };
     this.subt = this.subt.bind(this);
     this.sour = this.sour.bind(this);
@@ -338,7 +382,6 @@ class Sour_Patch_Kids extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -353,8 +396,7 @@ class The_Hangover extends React.Component {
       prize: 14.5,
       title: "The Hangover",
       subtitle: "The Hangover",
-      amount: 0,
-      image: "/images/origin_7-points-oregon-staff.jpg"
+      amount: 0
     };
     this.subt = this.subt.bind(this);
     this.hangover = this.hangover.bind(this);
@@ -372,7 +414,6 @@ class The_Hangover extends React.Component {
           prize={this.state.prize}
           title={this.state.title}
           subtitle={this.state.subtitle}
-          image={this.state.image}
           subt={this.subt}
         />
       </div>
@@ -386,8 +427,7 @@ class Good_Time extends React.Component {
       prize: 13.5,
       title: "Good Time",
       subtitle: "Good Time",
-      amount: 0,
-      image: "/images/220px-Kush_close.jpg"
+      amount: 0
     };
     this.goodTime = this.goodTime.bind(this);
     this.subt = this.subt.bind(this);
@@ -404,7 +444,6 @@ class Good_Time extends React.Component {
         <QuantityCounter_checkoutButton
           prize={this.state.prize}
           title={this.state.title}
-          image={this.state.image}
           subtitle={this.state.subtitle}
           subt={this.subt}
         />
@@ -470,17 +509,7 @@ class QuantityCounter_checkoutButton extends React.Component {
   render() {
     return (
       <div>
-        <h3>{this.props.subtitle}</h3>
-        <br />
-        <br />
-        <img
-          className="z-depth-5"
-          style={{
-            height: "200px",
-            width: "240px"
-          }}
-          src={this.props.image}
-        />
+        <b>{this.props.subtitle}</b>
         <br />
         <br />
         <a href="javascript:void(0)" id="bazuka_add" onClick={this.addOne}>
@@ -562,14 +591,12 @@ class Cart extends React.Component {
     return (
       <div>
         <a
-          disabled={this.props.count > 0 ? false : true}
           className="cartButton waves-effect waves-light btn-small"
           onClick={this.addToCart}
         >
           <i className="material-icons right ">shopping_cart</i>
           <b>Add</b>
         </a>
-
         <h5>Price: {price.toFixed(2)}</h5>
         <br />
       </div>

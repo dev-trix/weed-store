@@ -8,6 +8,59 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// <Purple_Kush />
+// <Bazuka_buble_gum />
+// <Good_Time />
+// <The_Hangover />
+// <Fun_Dip />
+// <Sour_Patch_Kids />
+// <Jedi_Skywalker />
+
+// class Cart extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.addOne = this.addOne.bind(this);
+//     this.minusOne = this.minusOne.bind(this);
+
+//     this.state = {
+//       count: 0
+//     };
+//   }
+//   addOne() {
+//     this.setState(prevCount => {
+//       return {
+//         count: prevCount.count + 1
+//       };
+//     });
+//   }
+//   minusOne() {
+//     this.setState(prevState => {
+//       if (prevState.count < 1) {
+//         return {
+//           count: (prevState.count = 0)
+//         };
+//       } else {
+//         return {
+//           count: prevState.count - 1
+//         };
+//       }
+//     });
+//   }
+
+//   render() {
+//     const test = "Is anything printing?";
+
+//     return (
+//       <div>
+//         <Godzilla
+//           addOne={this.addOne}
+//           count={this.state.count}
+//           minusOne={this.minusOne}
+//         />
+//       </div>
+//     );
+//   }
+// }
 var KushApp = function (_React$Component) {
   _inherits(KushApp, _React$Component);
 
@@ -101,6 +154,8 @@ var KushApp = function (_React$Component) {
         null,
         React.createElement("br", null),
         React.createElement("br", null),
+        React.createElement("br", null),
+        React.createElement("br", null),
         React.createElement(Purple_Kush, { purple: this.purple }),
         React.createElement(Bazuka_buble_gum, { bazuka: this.bazuka }),
         React.createElement(Godzilla, { godzilla: this.godzilla }),
@@ -189,8 +244,7 @@ var Purple_Kush = function (_React$Component3) {
       prize: 10.99,
       title: "Purple K...",
       amount: 0,
-      subtitle: "Purple Kush",
-      image: "/images/purple-kush.jpg"
+      subtitle: "Purple Kush"
     };
     _this3.purple = _this3.purple.bind(_this3);
     _this3.subt = _this3.subt.bind(_this3);
@@ -217,7 +271,6 @@ var Purple_Kush = function (_React$Component3) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -239,8 +292,7 @@ var Bazuka_buble_gum = function (_React$Component4) {
       title: "Bazuka...",
       prize: 15.0,
       amount: 0,
-      subtitle: "Bazuka Buble Gum",
-      image: "/images/kandy-kush-leagle-2_kr_natural-small.jpg"
+      subtitle: "Bazuka Buble Gum"
     };
     _this4.subt = _this4.subt.bind(_this4);
     _this4.bazuka = _this4.bazuka.bind(_this4);
@@ -267,7 +319,6 @@ var Bazuka_buble_gum = function (_React$Component4) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -289,8 +340,7 @@ var Godzilla = function (_React$Component5) {
       title: "Godzilla",
       prize: 10.5,
       subtitle: "Godzilla",
-      amount: 0,
-      image: "/images/s-marijuana.1.jpg"
+      amount: 0
     };
     _this5.subt = _this5.subt.bind(_this5);
     _this5.godzilla = _this5.godzilla.bind(_this5);
@@ -317,7 +367,6 @@ var Godzilla = function (_React$Component5) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -339,8 +388,7 @@ var Jedi_Skywalker = function (_React$Component6) {
       title: "Jedi...",
       prize: 10.99,
       subtitle: "Jedi Skywalker",
-      amount: 0,
-      image: "/images/1z2zr4o.jpg"
+      amount: 0
     };
     _this6.jedi = _this6.jedi.bind(_this6);
     _this6.subt = _this6.subt.bind(_this6);
@@ -367,7 +415,6 @@ var Jedi_Skywalker = function (_React$Component6) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -389,8 +436,7 @@ var Fun_Dip = function (_React$Component7) {
       title: "Fun Dip",
       prize: 13.5,
       subtitle: "Fun Dip",
-      amount: 0,
-      image: "/images/og-kush-.jpg"
+      amount: 0
     };
     _this7.subt = _this7.subt.bind(_this7);
     _this7.dip = _this7.dip.bind(_this7);
@@ -417,7 +463,6 @@ var Fun_Dip = function (_React$Component7) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -439,8 +484,7 @@ var Sour_Patch_Kids = function (_React$Component8) {
       prize: 10.0,
       title: "Sour Patch...",
       subtitle: "Sour Patch Kids",
-      amount: 0,
-      image: "/images/ba7ea1fda379e94c6fae61cec211755a.jpg"
+      amount: 0
     };
     _this8.subt = _this8.subt.bind(_this8);
     _this8.sour = _this8.sour.bind(_this8);
@@ -467,7 +511,6 @@ var Sour_Patch_Kids = function (_React$Component8) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -489,8 +532,7 @@ var The_Hangover = function (_React$Component9) {
       prize: 14.5,
       title: "The Hangover",
       subtitle: "The Hangover",
-      amount: 0,
-      image: "/images/origin_7-points-oregon-staff.jpg"
+      amount: 0
     };
     _this9.subt = _this9.subt.bind(_this9);
     _this9.hangover = _this9.hangover.bind(_this9);
@@ -517,7 +559,6 @@ var The_Hangover = function (_React$Component9) {
           prize: this.state.prize,
           title: this.state.title,
           subtitle: this.state.subtitle,
-          image: this.state.image,
           subt: this.subt
         })
       );
@@ -539,8 +580,7 @@ var Good_Time = function (_React$Component10) {
       prize: 13.5,
       title: "Good Time",
       subtitle: "Good Time",
-      amount: 0,
-      image: "/images/220px-Kush_close.jpg"
+      amount: 0
     };
     _this10.goodTime = _this10.goodTime.bind(_this10);
     _this10.subt = _this10.subt.bind(_this10);
@@ -566,7 +606,6 @@ var Good_Time = function (_React$Component10) {
         React.createElement(QuantityCounter_checkoutButton, {
           prize: this.state.prize,
           title: this.state.title,
-          image: this.state.image,
           subtitle: this.state.subtitle,
           subt: this.subt
         })
@@ -657,20 +696,10 @@ var QuantityCounter_checkoutButton = function (_React$Component11) {
         "div",
         null,
         React.createElement(
-          "h3",
+          "b",
           null,
           this.props.subtitle
         ),
-        React.createElement("br", null),
-        React.createElement("br", null),
-        React.createElement("img", {
-          className: "z-depth-5",
-          style: {
-            height: "200px",
-            width: "240px"
-          },
-          src: this.props.image
-        }),
         React.createElement("br", null),
         React.createElement("br", null),
         React.createElement(
@@ -810,7 +839,6 @@ var Cart = function (_React$Component14) {
         React.createElement(
           "a",
           {
-            disabled: this.props.count > 0 ? false : true,
             className: "cartButton waves-effect waves-light btn-small",
             onClick: this.addToCart
           },
