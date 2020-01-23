@@ -13,15 +13,17 @@ export default class Cart extends React.Component {
   render() {
     const price = this.props.count * this.props.priceCheck;
     return (
-      <div>
-        <a
+      <div className="addToCart">
+        <button
+          type="submit"
+          name="action"
           disabled={this.props.count > 0 ? false : true}
           className="cartButton waves-light btn-small"
           onClick={this.addToCart}
         >
           <i className="material-icons right ">shopping_cart</i>
           <b>Add</b>
-        </a>
+        </button>
 
         <h5>Price: {price.toFixed(2)}</h5>
         <br />

@@ -17,7 +17,7 @@ export default class The_Hangover extends React.Component {
   hangover() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.hangover(this.state.amount);
   }
   render() {

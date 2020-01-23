@@ -18,7 +18,7 @@ export default class Jedi_Skywalker extends React.Component {
   jedi() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.jedi(this.state.amount);
   }
   render() {

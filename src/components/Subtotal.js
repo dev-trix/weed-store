@@ -30,10 +30,8 @@ export default class Subtotal extends React.Component {
         this.props.goodTime;
 
     return ReactDOM.createPortal(
-      <div>
-        <div>
-          <h3>{this.state.total > 0 && this.state.total.toFixed(2)}</h3>
-        </div>
+      <div className="getThePrice" style={{ fontSize: "40px" }}>
+        {this.state.total > 0 && this.state.total.toFixed(2)}
       </div>,
       subtotal
     );
@@ -41,7 +39,7 @@ export default class Subtotal extends React.Component {
 
   render() {
     return ReactDOM.createPortal(
-      <div>
+      <div id="removeMe">
         <div>{this.subtotal()}</div>
       </div>,
       subtotal

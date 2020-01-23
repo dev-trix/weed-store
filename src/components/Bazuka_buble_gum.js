@@ -16,7 +16,7 @@ export default class Bazuka_buble_gum extends React.Component {
   bazuka() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.bazuka(this.state.amount);
   }
 

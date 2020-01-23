@@ -19,7 +19,7 @@ export default class Godzilla extends React.Component {
   godzilla() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.godzilla(this.state.amount);
   }
 

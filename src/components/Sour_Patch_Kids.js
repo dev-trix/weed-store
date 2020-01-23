@@ -18,7 +18,7 @@ export default class Sour_Patch_Kids extends React.Component {
   sour() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.sour(this.state.amount);
   }
   render() {

@@ -18,7 +18,7 @@ export default class Good_Time extends React.Component {
   goodTime() {}
   subt(price) {
     this.state.amount = price;
-    console.log("Here I am" + " " + this.state.amount);
+
     this.props.goodTime(this.state.amount);
   }
   render() {
