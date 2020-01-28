@@ -20,6 +20,7 @@ export default class Cart extends React.Component {
           disabled={this.props.count > 0 ? false : true}
           className="cartButton waves-light btn-small"
           onClick={this.addToCart}
+          id={"cartButton"}
         >
           <i className="material-icons right ">shopping_cart</i>
           <b>Add</b>
