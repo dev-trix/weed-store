@@ -4,6 +4,13 @@
   background: #ccc;
 }
 
+.login-box {
+  height: auto;
+  width: auto;
+  background-color: #555;
+  border: 10px solid black;
+}
+
 body {
   font-family: "Arial", Serif;
   background-color: #f4f4f4;

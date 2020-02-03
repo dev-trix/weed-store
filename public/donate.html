@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GOT-KUSH? Same Day Delivery!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color:#F5F5DC;">
+    <!-- Load React. -->
+
+    <!-- <div id="checkout"></div> -->
+    <!-- ... other HTML ... -->
+
+    <div>
+
+        <nav class="nav-wrapper black">
+            <span class="open-slide">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                        <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                        <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                    </svg>
+                </a>
+            </span>
+            <a href="./index.html" class="brand-logo">GOT KUSH?</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="./login.html"><b>Login</b></a></li>
+                <li><a href="./careers.html"><b>Careers</b></a></li>
+                <li><a href="#"><b>Contact</b></a></li>
+
+                <div>
+                    <li onclick="openSideMenu()" id="cartButton"><a
+                            class="cartButton waves-effect waves-light btn-small red"><i
+                                class="material-icons right ">shopping_cart</i><b>Cart</b></a></li>
+                    <li><a class="waves-effect waves-light btn-small"><i
+                                class="material-icons right">person_outline</i><b>Chat</b></a></li>
+                </div>
+
+            </ul>
+
+        </nav>
+
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSideMenu()"><i class="material-icons right medium">close</i></a>
+
+
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <h1 style="color:white; position: relative; left: 10px;">Home</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <h1 style="color:white;  position: relative; left: 10px;">Login</h1>
+                    </a>
+                </li>
+            </ul>
+
+            <br>
+            <br>
+            <br>
+            <p style="color:white; padding: 10px; bottom:0px;">You must be 19+ to purchase. Failure to provide proper
+                Canadian
+                identification will result in a non-refundable purchase.</p>
+        </div>
+
+    </div>
+
+
+    <br>
+
+
+    <br />
+
+    </center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center>
+        <h1>Donation</h1>
+    </center>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- <div class="container">
+        <h1>
+          Colors
+        </h1>
+        <div class="red white-text">
+          Div with color class
+        </div>
+        <div class="blue white-text">
+          Div with color class
+        </div>
+        <div class="green white-text">
+          Div with color class
+        </div>
+  
+        <h1>Buttons</h1>
+        <button class="btn">Read More</button>
+        <button class="btn waves-effect waves-light">Read More</button>
+        <button class="btn-large">Read More</button>
+        <button class="btn disabled">Read More</button>
+        <button class="btn large red darken-3 white-text">Read More</button>
+      </div> -->
+    <!-- Element Showed -->
+    <!-- <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+   -->
+    <!-- Tap Target Structure -->
+    <div class="tap-target" data-target="menu">
+        <div class="tap-target-content">
+            <h5>Title</h5>
+            <p>A bunch of text</p>
+        </div>
+    </div>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Got Kush???</h5>
+                    <p class="grey-text text-lighten-4">
+                        Welcome enjoy the variety of products we offer with many payment options. Also feel free to
+                        check out our
+                        awesome career's portal!
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Chat</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Donate</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            function openSideMenu() {
+                document.getElementById("side-menu").style.width = "350px";
+                document.getElementById("main").style.marginLeft = "300px";
+            }
+            function closeSideMenu() {
+                document.getElementById("side-menu").style.width = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+            }
+        </script>
+        <!-- <script>
+            $("#toggle").hide();
+            $("#cartButton").click(function() {
+              $("#toggle").toggle("slide");
+            });
+          </script> -->
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright Got-Kush.ca
+
+            </div>
+        </div>
+    </footer>
+    <!-- chat -->
+
+    <!-- </script> -->
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+
+
+    <!-- Load our React component.
+    <script src="like_button.js"></script> -->
+
+
+
+
+
+</body>
+
+</html>

@@ -37,8 +37,8 @@
       </span>
       <a href="" class="brand-logo">GOT KUSH?</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#"><b>Login</b></a></li>
-        <li><a href="#"><b>Careers</b></a></li>
+        <li><a href="./login.html"><b>Login</b></a></li>
+        <li><a href="./careers.html"><b>Careers</b></a></li>
         <li><a href="#"><b>Contact</b></a></li>
 
         <div>
@@ -55,7 +55,7 @@
     <div id="side-menu" class="side-nav">
       <a href="#" class="btn-close" onclick="closeSideMenu()"><i class="material-icons right medium">close</i></a>
 
-      <h1 style="color:white;">
+      <h1 style="color:white; position:  relative; left:17px;">
         <center>Cart</center>
       </h1>
       <hr>
@@ -76,7 +76,7 @@
       <hr>
 
       <center>
-        <h3 style="color:white;">Items</h3>
+        <h3 style="color:white; position: relative; right: 20px;">Items</h3>
       </center>
 
       <div>
@@ -96,14 +96,16 @@
       <br>
 
 
-
+      <br>
+      <br>
+      <br>
       <div>
         <div style="display: inline-block;">
           <h3 style=" color:white; padding: 10px;">Subtotal: </h3>
         </div>
         <div style="color:white; display: inline-block; position:relative; left:5px;" id="subtotal"></div>
       </div>
-      <div style="display: inline-block; position:relative; left:5%;">
+      <div style="display: inline-block; position:relative; left:3%;">
         <button class="btn waves-effect waves-light" onclick="getPrice()" type="submit" name="action">Pay Now
           <i class="material-icons right">send</i>
         </button>
@@ -115,6 +117,8 @@
       </div>
       <br>
       <br>
+      <br>
+
       <hr>
       <p style="color:white; padding: 10px; bottom:0px;">You must be 19+ to purchase. Failure to provide proper Canadian
         identification will result in a non-refundable purchase.</p>
@@ -192,9 +196,9 @@
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Chat</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Donate</a></li>
+            <li><a class="grey-text text-lighten-3" href="./chat">Chat</a></li>
+            <li><a class="grey-text text-lighten-3" href="./contact.html">Contact</a></li>
+            <li><a class="grey-text text-lighten-3" href="./donate.html">Donate</a></li>
 
           </ul>
         </div>
@@ -243,11 +247,15 @@
 
 
     function getPrice() {
+      // console.log(suby.childNodes[16].innerText);
+      // console.log(suby.childNodes[16].innerText.length);
+      const money = parseFloat(suby.childNodes[16].innerText);
 
-      console.log(suby.childNodes[16].innerText);
-      console.log(suby.childNodes[16].innerText.length);
-      if (suby.childNodes[16].innerText.length > 0) {
+      if (money > 30 && money < 120) {
         window.location.href = "./payment.html";
+
+      } else {
+        alert("Sorry we only complete orders $30 CAD or more and less than $120 CAD, please clear and order again!");
       }
 
     }

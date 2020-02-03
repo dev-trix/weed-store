@@ -10,12 +10,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
     <link rel="stylesheet" type="text/css" href="/styles.css" />
+
     <script src="http://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <link rel="stylesheet" type="text/css" href="./stripe.css" />
-    <script src="./payment-js.js"></script>
 </head>
 
 <body style="background-color:#F5F5DC;">
@@ -39,10 +38,13 @@
             <a href="./index.html" class="brand-logo">GOT KUSH?</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="./login.html"><b>Login</b></a></li>
-                <li><a href="#"><b>Careers</b></a></li>
+                <li><a href="./careers.html"><b>Careers</b></a></li>
                 <li><a href="#"><b>Contact</b></a></li>
 
                 <div>
+                    <li onclick="openSideMenu()" id="cartButton"><a
+                            class="cartButton waves-effect waves-light btn-small red"><i
+                                class="material-icons right ">shopping_cart</i><b>Cart</b></a></li>
                     <li><a class="waves-effect waves-light btn-small"><i
                                 class="material-icons right">person_outline</i><b>Chat</b></a></li>
                 </div>
@@ -55,7 +57,37 @@
             <a href="#" class="btn-close" onclick="closeSideMenu()"><i class="material-icons right medium">close</i></a>
 
 
-            <h1 style="color:white; position: relative; left: 10px;">HOME</h1>
+
+
+
+
+
+
+
+
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <a href="./index.html">
+                        <h1 style="color:white; position: relative; left: 10px;">Home</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="./login.html">
+                        <h1 style="color:white;  position: relative; left: 10px;">Login</h1>
+                    </a>
+                </li>
+                <li>
+                    <a href="./contact.html">
+                        <h1 style="color:white;  position: relative; left: 10px;">Login</h1>
+                    </a>
+                </li>
+            </ul>
+
+            <br>
+            <br>
+            <br>
             <p style="color:white; padding: 10px; bottom:0px;">You must be 19+ to purchase. Failure to provide proper
                 Canadian
                 identification will result in a non-refundable purchase.</p>
@@ -72,57 +104,35 @@
     </center>
     </div>
 
-
-
-    <div class="row container">
-        <center><b>Payment Method</b></center>
-        <br>
-        <br>
-
-        <form class="col s12" action="/charge" method="post" id="payment-form">
-            <div class="login-box" style="padding: 50px;">
-                <div class="row container">
-                    <div class="input-field col s6">
-                        <input style="color:white" placeholder="First Name" id="first_name" type="text"
-                            class="validate">
-                        <label for="first_name" style="color:white">First Name:</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input style="color:white" placeholder="Last Name" id="last_name" type="text" class="validate">
-                        <label style="color:white" for="last_name">Last Name:</label>
-                    </div>
-                </div>
-                <div class="row container">
-                    <div class="input-field col s6">
-                        <input style="color:white" placeholder="Address" id="address" type="text" class="validate">
-                        <label for="first_name" style="color:white">Address:</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <input style="color:white" placeholder="eg. (123) - 456- 7890" id="last_name" type="text"
-                            class="validate">
-                        <label style="color:white" for="last_name">Phone Number:</label>
-                    </div>
-                </div>
+    <center>
+        <h1>Register</h1>
+    </center>
+    <br>
+    <br>
+    <div class="row container login-box">
+        <form class="col s12">
+            <div style="padding: 50px;">
                 <div class="row">
-                    <div class="input-field col s12">
-                        <div class="form-row">
-                            <label for="Stripe" style="color:white">
-                                Credit or debit card
-                            </label>
-                            <div id="card-element">
-                                <!-- A Stripe Element will be inserted here. -->
-                                <div class="StripeElement"></div>
-                            </div>
-
-                            <!-- Used to display form errors. -->
-                            <div id="card-errors" role="alert"></div>
-                        </div>
+                    <div class="input-field col s6">
+                        <input placeholder="First Name:" style="color:white" id="first_name" type="text"
+                            class="validate">
+                        <label for="first_name" style="color:white"><b>First Name:</b></label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" placeholder="Last Name:" type="text" class="validate" style="color:white">
+                        <label for="last_name" style="color:white"><b>Last Name:</b></label>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="email" type="email" class="validate">
+                        <input id="password" type="password" class="validate" style="color:white">
+                        <label for="password" style="color:white">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" style="color:white">
                         <label for="email" style="color:white">Email</label>
                     </div>
                 </div>
@@ -132,28 +142,32 @@
                         <div class="input-field inline">
                             <input id="email_inline" type="email" class="validate">
                             <label for="email_inline" style="color:white">Email</label>
-                            <span class="helper-text" data-error="wrong" data-success="right" style="color:white">We
-                                will never share this
-                                information with anyone.</span>
+                            <span class="helper-text" data-error="wrong" data-success="right" style="color:white">Helper
+                                text</span>
                         </div>
                     </div>
                 </div>
-                <br>
-
-
                 <center>
-                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-                        <i class="material-icons right">send</i>
-                    </button>
-                    <button class="btn waves-effect waves-light red" onclick="reload()" type="submit"
-                        name="action">Clear
-                        <i class="material-icons right">autorenew</i>
-                    </button>
+                    <div>
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+
+                    </div>
                 </center>
             </div>
         </form>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- <div class="container">
         <h1>
           Colors
@@ -187,7 +201,7 @@
     </div>
     <footer class="page-footer black">
         <div class="container">
-            <div class="row">
+            <div class="row" style="padding: 50px;">
                 <div class="col l6 s12">
                     <h5 class="white-text">Got Kush???</h5>
                     <p class="grey-text text-lighten-4">
@@ -199,9 +213,9 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
                     <ul>
-                        <li><a class="grey-text text-lighten-3" href="#!">Chat</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Contact</a></li>
-                        <li><a class="grey-text text-lighten-3" href="#!">Donate</a></li>
+                        <li><a class="grey-text text-lighten-3" href="./chat">Chat</a></li>
+                        <li><a class="grey-text text-lighten-3" href="./contact.html">Contact</a></li>
+                        <li><a class="grey-text text-lighten-3" href="./donate.html">Donate</a></li>
 
                     </ul>
                 </div>
@@ -240,92 +254,14 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script>
-
-        // Create a Stripe client.
-        var stripe = Stripe("pk_test_bWhvFkV1bavIFoqDXzXILH8x");
-
-        // Create an instance of Elements.
-        var elements = stripe.elements();
-
-        // Custom styling can be passed to options when creating an Element.
-        // (Note that this demo uses a wider set of styles than the guide below.)
-        var style = {
-            base: {
-                color: '#32325d',
-                fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-                fontSmoothing: 'antialiased',
-                fontSize: '16px',
-                '::placeholder': {
-                    color: '#aab7c4'
-                }
-            },
-            invalid: {
-                color: '#fa755a',
-                iconColor: '#fa755a'
-            }
-        };
-
-        // Create an instance of the card Element.
-        var card = elements.create('card', { style: style });
-
-        // Add an instance of the card Element into the `card-element` <div>.
-        card.mount('#card-element');
-
-        // Handle real-time validation errors from the card Element.
-        card.addEventListener('change', function (event) {
-            var displayError = document.getElementById('card-errors');
-            if (event.error) {
-                displayError.textContent = event.error.message;
-            } else {
-                displayError.textContent = '';
-            }
-        });
-
-        // Handle form submission.
-        var form = document.getElementById('payment-form');
-        form.addEventListener('submit', function (event) {
-            event.preventDefault();
-
-            stripe.createToken(card).then(function (result) {
-                if (result.error) {
-                    // Inform the user if there was an error.
-                    var errorElement = document.getElementById('card-errors');
-                    errorElement.textContent = result.error.message;
-                } else {
-                    // Send the token to your server.
-                    stripeTokenHandler(result.token);
-                }
-            });
-        });
-
-        // Submit the form with the token ID.
-        function stripeTokenHandler(token) {
-            // Insert the token ID into the form so it gets submitted to the server
-            var form = document.getElementById('payment-form');
-            var hiddenInput = document.createElement('input');
-            hiddenInput.setAttribute('type', 'hidden');
-            hiddenInput.setAttribute('name', 'stripeToken');
-            hiddenInput.setAttribute('value', token.id);
-            form.appendChild(hiddenInput);
-
-            // Submit the form
-            form.submit();
-        }
-
-    </script>
 
 
     <!-- Load our React component.
     <script src="like_button.js"></script> -->
 
 
-    <script>
 
-        function reload() {
-            location.reload()
-        }
-    </script>
+
 
 </body>
 
