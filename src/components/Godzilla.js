@@ -6,11 +6,11 @@ export default class Godzilla extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Godzilla",
-      prize: 10.5,
-      subtitle: "Godzilla",
+      title: "Cert",
+      prize: 159.99,
+      subtitle: "Back To Work Certification",
       amount: 0,
-      image: "/images/s-marijuana.1.jpg"
+      image: "/images/img/backtowork.png",
     };
     this.subt = this.subt.bind(this);
     this.godzilla = this.godzilla.bind(this);

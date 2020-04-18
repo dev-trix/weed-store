@@ -1,278 +1,482 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>GOT-KUSH? Same Day Delivery!</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <!-- Materialize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-
-  <link rel="stylesheet" type="text/css" href="/styles.css" />
-
-  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="keywords" content="#">
+  <meta name="description" content="#">
+  <title> Fight | Covid </title>
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="#">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="#">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="#">
+  <link rel="apple-touch-icon-precomposed" href="#">
+  <link rel="shortcut icon" href="#">
+  <!-- Bootstrap -->
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawesome -->
+  <link href="./assets/css/font-awesome.css" rel="stylesheet">
+  <!-- Flaticons -->
+  <link href="./assets/css/font/flaticon.css" rel="stylesheet">
+  <!-- Pe-icons -->
+  <link href="./assets/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <!-- Swiper Slider -->
+  <link href="./assets/css/swiper.min.css" rel="stylesheet">
+  <!-- Range Slider -->
+  <link href="./assets/css/ion.rangeSlider.min.css" rel="stylesheet">
+  <!-- magnific popup -->
+  <link href="../assets/css/magnific-popup.css" rel="stylesheet">
+  <!-- Nice Select -->
+  <link href="../assets/css/nice-select.css" rel="stylesheet">
+  <!-- Custom Stylesheet -->
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="./assets/css/responsive.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800&display=swap"
+    rel="stylesheet">
 </head>
 
-<body style="background-color:#F5F5DC;">
-  <!-- Load React. -->
+<body>
+  <!-- top-Navigation -->
+  <div class="top-header">
+    <div class="container-fluid custom-container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="top-left">
+            <!-- <ul class="top-info">
 
-  <!-- <div id="checkout"></div> -->
-  <!-- ... other HTML ... -->
-
-  <div>
-
-    <nav class="nav-wrapper black">
-      <span class="open-slide">
-        <a href="#" onclick="openSideMenu()">
-          <svg width="30" height="30">
-            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-          </svg>
-        </a>
-      </span>
-      <a href="" class="brand-logo">GOT KUSH?</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="./login.html"><b>Login</b></a></li>
-        <li><a href="./careers.html"><b>Careers</b></a></li>
-        <li><a href="#"><b>Contact</b></a></li>
-
-        <div>
-          <li onclick="openSideMenu()" id="cartButton"><a class="cartButton waves-effect waves-light btn-small red"><i
-                class="material-icons right ">shopping_cart</i><b>Cart</b></a></li>
-          <li><a class="waves-effect waves-light btn-small"><i
-                class="material-icons right">person_outline</i><b>Chat</b></a></li>
+							<li><a href="#"><i class="fas fa-envelope"></i> info@fight-covid.ca</a></li>
+						</ul> -->
+          </div>
         </div>
-
-      </ul>
-
-    </nav>
-
-    <div id="side-menu" class="side-nav">
-      <a href="#" class="btn-close" onclick="closeSideMenu()"><i class="material-icons right medium">close</i></a>
-
-      <h1 style="color:white; position:  relative; left:17px;">
-        <center>Cart</center>
-      </h1>
-      <hr>
-
-      <div>
-
-        <div style="display: inline-block; padding:10px;">
-          <h5 style="color:white;">Product </h5>
-        </div>
-        <div style="display: inline-block; position:relative; left:112px;">
-          <h5 style="color:white;">Price</h5>
-        </div>
-
-
-      </div>
-
-
-      <hr>
-
-      <center>
-        <h3 style="color:white; position: relative; right: 20px;">Items</h3>
-      </center>
-
-      <div>
-        <h5 style="color:white; padding: 10px; display: inline-block;">
-          <div id="sub"></div>
-        </h5>
-        <h5 style="color:white; display: inline-block; position:relative; left:80px;">
-          <div id="price"></div>
-        </h5>
-      </div>
-      <br>
-
-      <br>
-
-
-      <br>
-      <br>
-
-
-      <br>
-      <br>
-      <br>
-      <div>
-        <div style="display: inline-block;">
-          <h3 style=" color:white; padding: 10px;">Subtotal: </h3>
-        </div>
-        <div style="color:white; display: inline-block; position:relative; left:5px;" id="subtotal"></div>
-      </div>
-      <div style="display: inline-block; position:relative; left:3%;">
-        <button class="btn waves-effect waves-light" onclick="getPrice()" type="submit" name="action">Pay Now
-          <i class="material-icons right">send</i>
-        </button>
-        <div style="display: inline-block; position:relative; left:8%;">
-          <button class="btn waves-effect waves-light red" onclick="reload()" type="submit" name="action">Clear
-            <i class="material-icons right">autorenew</i>
-          </button>
+        <div class="col-md-6">
+          <div class="top-right">
+            <!-- <ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-square"></i></a> </li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter-square"></i></a> </li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a> </li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a> </li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a> </li>
+						</ul> -->
+            <a href="#" class="top-btn">$ Donate now</a>
+          </div>
         </div>
       </div>
-      <br>
-      <br>
-      <br>
-
-      <hr>
-      <p style="color:white; padding: 10px; bottom:0px;">You must be 19+ to purchase. Failure to provide proper Canadian
-        identification will result in a non-refundable purchase.</p>
-    </div>
-
-  </div>
-
-
-  <br>
-
-
-  <br />
-  <div id="main">
-    <div id="kushapp"></div>
-    <center>
-
-
-      <div class="container">
-        <ul class="pagination">
-          <li class="disabled">
-            <a href="#!"><i class="material-icons">chevron_left</i></a>
-          </li>
-          <li class="active"><a href="#!">1</a></li>
-          <li class="disabled"><a href="#!">2</a></li>
-
-          <li class="disabled">
-            <a href="#!"><i class="material-icons disabled">chevron_right</i></a>
-          </li>
-        </ul>
-      </div>
-  </div>
-  </center>
-  </div>
-  <!-- <div class="container">
-        <h1>
-          Colors
-        </h1>
-        <div class="red white-text">
-          Div with color class
-        </div>
-        <div class="blue white-text">
-          Div with color class
-        </div>
-        <div class="green white-text">
-          Div with color class
-        </div>
-  
-        <h1>Buttons</h1>
-        <button class="btn">Read More</button>
-        <button class="btn waves-effect waves-light">Read More</button>
-        <button class="btn-large">Read More</button>
-        <button class="btn disabled">Read More</button>
-        <button class="btn large red darken-3 white-text">Read More</button>
-      </div> -->
-  <!-- Element Showed -->
-  <!-- <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
-   -->
-  <!-- Tap Target Structure -->
-  <div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-      <h5>Title</h5>
-      <p>A bunch of text</p>
     </div>
   </div>
-  <footer class="page-footer black">
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container-fluid custom-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="navigation">
+            <div class="logo">
+
+            </div>
+            <div class="main-navigation">
+              <nav>
+                <ul class="main-menu">
+                  <li class="menu-item"> <a href="./index.html" class="text-light-black">Home</a>
+                  </li>
+                  <li class="menu-item"> <a href="./about.html" class="text-light-black">About</a>
+                  </li>
+                  <li class="menu-item"> <a href="./products.html" class="text-light-black">Products</a>
+                  </li>
+                  <li class="menu-item "> <a href="./shop.html" class="text-light-black">Shop</a>
+
+                  </li>
+
+
+
+
+
+                </ul>
+              </nav>
+            </div>
+            <div class="right-side-navigation">
+              <ul>
+                <li class="hamburger-menu">
+                  <a href="#" class="menu-btn"> <span></span>
+                    <span></span>
+                    <span></span>
+                  </a>
+                </li>
+                <li class="user-details">
+                  <a href="#"> <i class="pe-7s-user"></i> <span>Hi, Customer</span>
+                  </a>
+                </li>
+
+                <li class="cart"> <a href="./order-details.html" class="text-dark-red"><i class="pe-7s-cart"></i></a>
+                  <span id="number" class="cart" value="0">0</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="main-sec"></div>
+
+  <!-- slider -->
+  <section class="about-us-slider swiper-container p-relative slider-banner-1">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide slide-item">
+        <img class="img-fluid full-width">
+        <div class="transform-center z-index-3">
+          <div class="container-fluid custom-container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12 align-self-center">
+                <div class="right-side-content far-right">
+                  <h6 class="text-white">CANADA</h6>
+                  <h1 class="text-white fw-600">Canada Together</h1>
+                  <p class="text-white fw-400"><b>Help Fight Covid-19, Canada Together. Donation are
+                      sent
+                      to an orginization dedicated to finding a vacination, for covid-19.</b></p>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay overlay-bg-dark overlay-bg-img-1"></div>
+      </div>
+      <div class="swiper-slide slide-item">
+        <img class="img-fluid full-width">
+        <div class="transform-center z-index-3">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 align-self-center">
+                <div class="right-side-content text-center">
+                  <h6 class="text-white"><b>CANADA</b></h6>
+                  <h1 class="text-white fw-600">Our Helping people in need</h1>
+                  <p class="text-white fw-400"><b>Purchase Protective Equipment. Children and Adults
+                      are
+                      not immune to this disease. Our shop is fully stocked with equipment to
+                      fight
+                      Covid-19 vigilantly and effectively.</b> </p>
+                  <a href="#" class="btn-solid with-line btn-big mt-20"><span>Shop Now <i
+                        class="fas fa-caret-right"></i></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay overlay-bg-dark overlay-bg-img-2"></div>
+      </div>
+      <div class="swiper-slide slide-item">
+        <img src="./assets/img/canada.png" class="img-fluid full-width">
+        <div class="transform-center z-index-3">
+          <div class="container-fluid custom-container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12 align-self-center">
+                <div class="left-side-content text-right">
+                  <h6 class="text-white">CANADA</h6>
+                  <h1 class="text-white fw-600">Our Future Is Now</h1>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="overlay overlay-bg-dark overlay-bg-img"></div>
+      </div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </section>
+  <!-- slider -->
+  <section class="service-type">
+
+  </section>
+  <!-- Browse by category -->
+  <section class="browse-cat bg-theme-primary section-padding">
+
+  </section>
+  <!-- Browse by category -->
+  <!-- sell section -->
+  <section class="recent-order section-padding">
+    <div class="container-fluid custom-container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-header-left title">
+
+
+
+            <h3 class="text-light-black header-title">Stay Home Save Lives</h3>
+            <span class="fs-14"><a href="./products.html">See All Bestseller</a></span>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a>
+                <img src="./assets/img/vac-1.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label new"> <span>VAC</span>
+                </div>
+              </div>
+
+              <div class="cart-hover">
+                <button class="btn-cart disabled fw-600" tabindex="-1">SOLD OUT</button>
+              </div>
+            </div>
+            <div class="product-caption text-center">
+
+              <h6 class="product-title fw-500 mt-10">
+                <a class="text-color-primary">Vacination
+                </a>
+              </h6>
+              <h3 class="product-title fw-500 mt-10">
+                <a class="text-color-primary">Currently not
+                  available</a>
+                </h5>
+
+                <div class="product-money mt-10"> <span class="text-color-primary fw-600">$750.00
+                    CAD</span>
+                  <br>
+                  <span class="text-price">SOLD OUT!</span>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a href="./shops/3m-shop.html">
+                <img src="./assets/img/3m-mask.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label new">
+                  <span>3M</span>
+                </div>
+
+              </div>
+              <!-- <div class="button-group">
+								<a data-toggle="tooltip" data-placement="left" title="" tabindex="-1"><i
+										class="pe-7s-like"></i>
+								</a>
+								<a href="#" data-toggle="modal" data-target="#quick_view">
+									<span data-toggle="tooltip"
+										data-placement="left" title="" data-original-title="Quick View">
+										<i class="pe-7s-search"></i>
+									</span>
+								</a>
+							</div> -->
+              <div class="cart-hover">
+                <a href="./shops/3m-shop.html">
+                  <button class="btn-cart  fw-600" tabindex="-1">
+                    Purchase
+                  </button>
+
+                </a>
+
+              </div>
+            </div>
+            <div class=" product-caption text-center">
+
+              <h6 class="product-title fw-500 mt-10">
+                <a href="" class="text-color-primary">3M Mask's With Respirators</a>
+              </h6>
+              <br>
+
+              <div class="product-money mt-10">
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a href="./shops/african-mask-shop.html">
+                <img src="./assets/img/afro-mask.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label new">
+                  <span>SALE</span>
+                </div>
+                <div class="product-label discount">
+                  <span>-25%</span>
+
+                </div>
+              </div>
+
+              <div class="cart-hover">
+                <a href="./shops/african-mask-shop.html" class="btn-cart  fw-600" tabindex="-1">Purchase</a>
+              </div>
+            </div>
+            <div class="product-caption text-center">
+
+              <h6 class="product-title fw-500 mt-10">
+                <a href="./shops/african-mask-shop.html" class="text-color-primary">African Face
+                  Mask</a>
+              </h6>
+              <br>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a href="./shops/back-to-work.html">
+                <img src="./assets/img/backtowork.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label new"> <span>CERT</span>
+                </div>
+              </div>
+
+              <div class="cart-hover">
+                <a href="./shops/back-to-work.html" class="btn-cart  fw-600" tabindex="-1">Purchase</a>
+              </div>
+            </div>
+            <div class="product-caption text-center">
+              <div class="product-status">
+
+
+              </div>
+              <h6 class="product-title fw-500 mt-10"><a href="./shops/back-to-work.html" class="text-color-primary">Back
+                  To Work
+                  Certification</a></h6>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a href="./shops/back-to-school.html">
+                <img src="./assets/img/school.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label nonveg"> <span>CERT</span>
+                </div>
+              </div>
+
+              <div class="cart-hover">
+                <a href="./shops/back-to-school.html" class="btn-cart  fw-600" tabindex="-1">Purchase</a>
+              </div>
+            </div>
+            <div class="product-caption text-center">
+
+              <h6 class="product-title fw-500 mt-10"><a href="./shops/back-to-school.html"
+                  class="text-color-primary">Back To School
+                  Certification</a></h6>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-4 col-md-6 col-sm-6">
+          <div class="product-box mb-md-20">
+            <div class="product-img">
+              <a href="./shops/abbot.html">
+                <img src="./assets/img/covid-test.png" class="img-fluid full-width" alt="product-img">
+              </a>
+              <div class="product-badge">
+                <div class="product-label new"> <span>ABOTT</span>
+                </div>
+              </div>
+
+              <div class="cart-hover">
+                <a href="./shops/abbot.html" class="btn-cart  fw-600" tabindex="-1">Inquire</a>
+              </div>
+            </div>
+            <div class="product-caption text-center">
+              <h6 class="product-title fw-500 mt-10"><a href="./shops/abbot.html" class="text-color-primary">Novel
+                  Covid-19 Rappid Test Unit</a></h6>
+
+              <div class="product-money mt-10"> <span class="text-color-primary fw-600">Special
+                  Order</span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ex-collection section-padding bg-theme-primary">
+  </section>
+  <section class="section-padding block_newsletter">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Got Kush???</h5>
-          <p class="grey-text text-lighten-4">
-            Welcome enjoy the variety of products we offer with many payment options. Also feel free to check out our
-            awesome career's portal!
-          </p>
+        <div class="col-12">
+          <div class="section-header-left text-center">
+            <h3 class="text-light-black header-title">Grab Our Newsletter</h3>
+            <p>To receive latest offers and discounts from the shop. </p>
+          </div>
         </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="./chat">Chat</a></li>
-            <li><a class="grey-text text-lighten-3" href="./contact.html">Contact</a></li>
-            <li><a class="grey-text text-lighten-3" href="./donate.html">Donate</a></li>
-
-          </ul>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="subscribe-wrapper">
+            <form id="subscribe-form" method="post" action="#">
+              <div class="subscribe-content">
+                <input type="text" name="subscribe-input" id="subscribe-input" value=""
+                  placeholder="Enter Your Email Address" class="form-control input-text required-entry validate-email">
+                <button class="button" type="submit"><span>Subscribe</span></button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <script>
-      function openSideMenu() {
-        document.getElementById("side-menu").style.width = "350px";
-        document.getElementById("main").style.marginLeft = "300px";
-      }
-      function closeSideMenu() {
-        document.getElementById("side-menu").style.width = "0px";
-        document.getElementById("main").style.marginLeft = "0px";
-      }
-    </script>
-    <!-- <script>
-            $("#toggle").hide();
-            $("#cartButton").click(function() {
-              $("#toggle").toggle("slide");
-            });
-          </script> -->
+  </section>
 
-    <div class="footer-copyright">
-      <div class="container">
-        © 2020 Copyright Got-Kush.ca
+  <div class="copyright bg-black">
+    <div class="container-fluid custom-container">
+      <div class="row">
 
+        <div class="col-lg-4 text-center medewithlove align-self-center"> <a href="https://www.dev-trix.com"
+            class="text-custom-white">Made with Real <i class="fas fa-heart"></i> Fight Covid</a>
+        </div>
+        <div class="col-lg-4">
+          <div class="copyright-text"> <span class="text-white">© <a href="#" class="text-white">Fight
+                Covid</a> - 2020 | All Right Reserved</span>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-  <!-- chat -->
-
-  <!-- </script> -->
+  </div>
 
 
+  <!-- footer -->
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Place all Scripts Here -->
+  <!-- jQuery -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- Popper -->
+  <script src="./assets/js/popper.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <!-- Range Slider -->
+  <script src="./assets/js/ion.rangeSlider.min.js"></script>
+  <!-- Swiper Slider -->
+  <script src="./assets/js/swiper.min.js"></script>
+  <!-- Nice Select -->
+  <script src="./assets/js/jquery.nice-select.min.js"></script>
+  <!-- magnific popup -->
+  <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Maps -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnd9JwZvXty-1gHZihMoFhJtCXmHfeRQg"></script>
+  <!-- sticky sidebar -->
+  <script src="./assets/js/ion.rangeSlider.min.js"></script>
+  <!-- EWA Js -->
+  <script src="./assets/js/main.js"></script>
+  <!-- /Place all Scripts Here -->
+  <script src="./assets/js/test.js"></script>
   <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
 
-  <script src="/bundle.js"></script>
-  <!-- Load our React component.
-    <script src="like_button.js"></script> -->
-
-  <script>
-    const suby = document.getElementById("subtotal");
-
-
-    function getPrice() {
-      // console.log(suby.childNodes[16].innerText);
-      // console.log(suby.childNodes[16].innerText.length);
-      const money = parseFloat(suby.childNodes[16].innerText);
-
-      if (money > 30 && money < 120) {
-        window.location.href = "./payment.html";
-
-      } else {
-        alert("Sorry we only complete orders $30 CAD or more and less than $120 CAD, please clear and order again!");
-      }
-
-    }
-
-  </script>
-
-  <script>
-
-    function reload() {
-      location.reload()
-    }
-  </script>
-
-  <script>
-
-
-  </script>
+  <script src="bundle.js"></script>
 </body>
 
 </html>

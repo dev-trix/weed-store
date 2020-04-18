@@ -9,7 +9,10 @@ export default class Cart extends React.Component {
   addToCart() {
     this.props.addToCart(this.props.count * this.props.priceCheck);
   }
-
+  openSideMenu() {
+    document.getElementById("side-menu").style.width = "350px";
+    document.getElementById("main").style.marginLeft = "300px";
+  }
   render() {
     const price = this.props.count * this.props.priceCheck;
     return (

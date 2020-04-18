@@ -29,7 +29,7 @@ export default class KushApp extends React.Component {
       funDip: 0,
       sourPatch: 0,
       hangover: 0,
-      goodTime: 0
+      goodTime: 0,
     };
   }
 
@@ -88,12 +88,7 @@ export default class KushApp extends React.Component {
             <div>
               <Fun_Dip dip={this.dip} />
             </div>
-            <div>
-              <Sour_Patch_Kids sour={this.sour} />
-            </div>
-            <div>
-              <The_Hangover hangover={this.hangover} />
-            </div>
+
             <div>
               <Good_Time goodTime={this.goodTime} />
             </div>

@@ -6,11 +6,11 @@ export default class Fun_Dip extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Fun Dip",
-      prize: 13.5,
-      subtitle: "Fun Dip",
+      title: "3M Mask",
+      prize: 45.59,
+      subtitle: "3M Mask",
       amount: 0,
-      image: "/images/og-kush-.jpg"
+      image: "/images/img/3m.png",
     };
     this.subt = this.subt.bind(this);
     this.dip = this.dip.bind(this);

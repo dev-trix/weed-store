@@ -6,11 +6,11 @@ export default class Jedi_Skywalker extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "Skywalker",
+      title: "Cert",
       prize: 10.99,
-      subtitle: "Skywalker",
+      subtitle: "Back To School Certification",
       amount: 0,
-      image: "/images/1z2zr4o.jpg"
+      image: "/images/img/school.png",
     };
     this.jedi = this.jedi.bind(this);
     this.subt = this.subt.bind(this);

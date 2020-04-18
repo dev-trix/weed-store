@@ -4,11 +4,11 @@ export default class Bazuka_buble_gum extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      title: "OG Bubba",
-      prize: 15.0,
+      title: "Afro Mask",
+      prize: 99.99,
       amount: 0,
-      subtitle: "OG Bubba",
-      image: "/images/kandy-kush-leagle-2_kr_natural-small.jpg"
+      subtitle: "African Face Mask",
+      image: "/images/img/afro-mask.png",
     };
     this.subt = this.subt.bind(this);
     this.bazuka = this.bazuka.bind(this);
