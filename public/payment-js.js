@@ -1,5 +1,5 @@
 function getCardNumber() {
-  var stripe = Stripe("pk_live_fmbfyZ3xdFhluL4cNDtrpTer00pBnWeYcN");
+  var stripe = Stripe("stripe");
   var elements = stripe.elements();
 
   var style = {
