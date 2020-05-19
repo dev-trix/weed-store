@@ -2,7 +2,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const express = require("express");
 const app = express();
-const stripe = require("stripe")("sk_live_hC5ah1mAb7TUtQthHagu3KXH00VvRfkqas");
+const stripe = require("stripe")("Token");
 const publicPath = path.join(__dirname, "..", "public");
 
 app.use(bodyParser.urlencoded({ extended: true }));
